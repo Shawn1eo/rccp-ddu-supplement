@@ -1,5 +1,14 @@
 # Contextual Chance Constraints under Decision-Dependent Uncertainty
 
+**[Read the Online Appendix (PDF, 9 pages)](Online-Appendix.pdf)**
+
+The paper’s “Online Appendix” is the PDF titled *Computational Supplement*. The two sections on the experimental setup are on the first two pages.
+
+| Section | Where to look in the PDF | LaTeX source |
+|---|---|---|
+| **S1.1 · Archived Pooled-Residual Diagnostic** | Starts on **page 1**. At the top of **page 2**, Table S1 reports reliability across the 16 baseline settings, including the CART result. | [S1.1 source](supplement/experiments.tex#L5) |
+| **S1.2 · Controlled DDU Stress Test** | Starts on **page 2**, immediately below Table S1. Equation (S2) gives the demand location and scale functions. Equation (S3) introduces the strength of price dependence. | [S1.2 source](supplement/experiments.tex#L34) |
+
 This research archive accompanies the November 25, 2026 manuscript by Xiangting Liu, Shengran Wang, Kaile Yan and Zhi-Hai Zhang. It contains the computational formulations for contextual cluster weights, synthetic experiment designs and outputs, and the reported JD.com case results. The proof appendix is distributed with the manuscript.
 
 ## Cite
