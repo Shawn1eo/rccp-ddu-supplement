@@ -1,0 +1,122 @@
+\section{Experimental Design and Reproducibility}\label{app:experimental-detail}
+
+This section explains how the numerical experiments generate demand and evaluate estimates and decisions. Section~\ref{app:baseline-design} describes the demand model and settings for comparing CCW with the residual-based methods. Section~\ref{app:stress-design} explains how the stress test varies price dependence and evaluates decisions. Section~\ref{app:probability-design} describes how estimation errors are measured against known probabilities. Each subsection identifies the records available for verification. The demand-model families follow \citet{harsha2021prescriptive,serrano2024bilevel}. Coefficients and nonlinear interactions are study-specific.
+
+\subsection{Archived Pooled-Residual Diagnostic}\label{app:baseline-design}
+
+This diagnostic documents an earlier comparison of CCW with lasso, lasso least-angle regression, and orthogonal matching pursuit coupled with pooled residuals. The regressors were selected by mean squared prediction error in a 19-model screen. They share the same pooled-residual approach to estimating the demand distribution. Each historical observation contains price $p$, ten contextual coordinates, and demand $D$. Let $X=(X_1,\ldots,X_{10})$ be a mean-zero Gaussian context. Coordinates $i$ and $j$ have covariance $0.5^{|i-j|}$, following \citet{serrano2024bilevel}. Let $U$ be an independent standard normal shock. Historical prices are uniform on $\{10,10.1,\ldots,29.9\}$. The mean and scale coefficient vectors are $\beta_x=(-2,-1,0,1,2,0,0,0,0,0)^\top/\sqrt{10}$ and
+$\gamma_x=(1,1,1,1,1,0,0,0,0,0)^\top/\sqrt5$. Baseline demand is
+\begin{equation}\label{eq:baseline-demand}
+ D=\max\{0,200-10p+\beta_x^\top X+
+ (20-2.1p+0.2p^2+\gamma_x^\top X)U\}.
+\end{equation}
+The scale in \eqref{eq:baseline-demand} varies with price and context, whereas the residual-based methods pool residuals across historical observations. The comparison therefore examines the consequences of using a common residual distribution when conditional variability changes. Procurement cost is 5 and salvage value is 2. The archived design uses 10,000 historical observations per run and ten scheduled replications at each combination of profit targets \(0,25,50,100\) and allowed violation probabilities \(0.1,0.2,0.5,0.9\).
+
+Table~\ref{tab:baseline-reliability} uses the 16 setting means in \texttt{baseline\_reliability\_summary.csv}, transcribed from the archived comparison workbook. The generating specification in the archive differs from the retained simulator in its contextual coefficients. In the retained residual-based code, the optimizer and the evaluation caller use different orderings for the price and quantity outputs. The code version that produced the archived workbook is unverified. Replication-level outcomes and standard errors are unavailable.
+
+\begin{table}[H]
+\centering
+\caption{Archived pooled-residual diagnostic.}\label{tab:baseline-reliability}
+\begin{tabular}{lcc}
+\toprule
+Method & Range of mean reliability & Settings meeting \(1-\alpha\)\\
+\midrule
+CCW (kNN) & 0.927--0.983 & 16/16 \\
+CCW (LSA) & 0.936--0.976 & 16/16 \\
+CCW (CART) & 0.923--0.971 & 16/16 \\
+Lasso & 0.246--0.285 & 4/16 \\
+Lasso least-angle regression & 0.244--0.286 & 4/16 \\
+Orthogonal matching pursuit & 0.249--0.287 & 4/16 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Controlled DDU Stress Test}\label{app:stress-design}
+
+This section explains how the stress test varies the strength of price dependence and how it evaluates the decisions chosen by each method. The stress test varies decision dependence while holding the demand distribution at reference price $p_0=10$ fixed. The design first specifies location and scale as functions of price $p$ and context, then varies their departure from the reference-price values. For the mean-zero Gaussian context $x=(x_1,\ldots,x_5)$, coordinates $i$ and $j$ have covariance $0.5^{|i-j|}$. The five-coordinate coefficient vectors are $\beta_x=(-2,-1,0,1,2)^\top/\sqrt{10}$ and $\gamma_x=(1,1,1,1,1)^\top/\sqrt5$. Define the location $\bar m$ and scale $\bar\sigma$ by
+\begin{align}
+ \bar m(p,x)={}&200-10p+\beta_x^\top x-4(p-p_0)\tanh(x_1)\nonumber\\
+ &+5\sin\{0.6(p-p_0)\}\tanh(x_2),\nonumber\\
+ \bar\sigma(p,x)&=20-2.1p+0.2p^2+\gamma_x^\top x
+ +\frac{2|p-p_0|}{1+\exp(-x_3)},\label{eq:stress-base}
+\end{align}
+The DDU intensity factor $\rho$ scales departures from the reference-price distribution. The interpolated location $m_\rho$ and scale $\sigma_\rho$ are
+\begin{align}
+ m_\rho(p,x)&=\bar m(p_0,x)+\rho\{\bar m(p,x)-\bar m(p_0,x)\},\nonumber\\
+ \sigma_\rho(p,x)&=\max\{10^{-5},\bar\sigma(p_0,x)+\rho[\bar\sigma(p,x)-\bar\sigma(p_0,x)]\}.\label{eq:stress-interpolation}
+\end{align}
+Demand is $\max\{0,m_\rho(p,x)+\sigma_\rho(p,x)U\}$, where $U$ is an independent standard normal shock. At intensity $\rho=0$, demand is independent of price conditional on context. Increasing intensity introduces the price dependence specified in \eqref{eq:stress-base}. Nonlinear price--context interactions and changing conditional variance challenge P--CCP's additive regression and pooled residuals.
+
+CCW selects its neighborhood parameters using validation observations. Price and context coordinates are standardized using their training means and standard deviations. Candidate relative price weights are $\{1,2,4,8,12\}$ and candidate neighbor counts are $\{100,150,225\}$. The relative price weight multiplies standardized price in neighbor distances. The validation continuous ranked probability score selects the parameter combination \citep{gneiting2007strictly}.
+
+The comparison methods construct demand distributions for the same economic decision. P--CCP fits additive ridge regression on standardized price, squared price, and context with penalty 1. It samples 1,600 pooled training residuals with replacement. CQ--CCP fits gradient-boosted conditional quantiles using the same raw predictors at 15 quantile levels from 0.01 to 0.99. Each fit uses 100 trees of maximum depth 2, a learning rate of 0.05, and a minimum leaf size of 15. Both methods use scikit-learn implementations \citep{pedregosa2011scikit}. Cumulative maxima make fitted quantiles nondecreasing before CQ--CCP interpolates 1,001 scenarios on an equally spaced probability grid from 0.01 to 0.99 and censors negative demand at zero. SAA--CCP pools observed demand. The Oracle uses the exact demand distribution after negative realizations are replaced by zero. Historical prices are drawn uniformly from the 41 candidate prices from 10 to 30 in steps of 0.5. All methods use that grid, profit target 100, procurement cost 5, and salvage value 2.
+
+The historical frontier in paper Figure~4 uses seed 20260805 and 50 replications per intensity. The five values of \(\rho\) are 0, 0.25, 0.50, 0.75, and 1. Each replication has 6,000 training observations, 1,200 validation observations, and 80 independent evaluation contexts. Monte Carlo evaluation uses 2,500 demand draws per context, shared across methods. The allowed violation probabilities are 0.02, 0.05, 0.10, 0.15, 0.20, and 0.30. A replication enters a method's means for profit and reliability only if that method returns a decision satisfying the fitted chance constraint at all 80 evaluation contexts. Filled points indicate that mean reliability minus 1.96 times its replication-level standard error reaches \(1-\alpha\). The historical summary and replication-level CSV files for that frontier are unavailable. The archived frontier assigned shapes according to the available settings within each method. Paper Figure~4 identifies methods by color. The plotting script assigns shapes by the corresponding \(\alpha\) in regenerated figures.
+
+Paper Figure~3 uses 20 further replications per intensity (IDs 70--89), with the same training and validation sizes and 80 test contexts per replication. The nominal and fixed-margin arms share the fitted estimators and evaluation contexts. The data-driven methods require fitted attainment probabilities of 0.90 and 0.95 in the two arms. The Oracle uses the generating distribution and a requirement of 0.90 in both arms. Paper Figure~3 shows the fixed-margin arm. A returned decision qualifies when its conditional probability of attaining profit target 100 under the generating distribution is at least 0.90, up to a numerical tolerance of \(10^{-12}\). The feasibility rate divides qualifying decisions by all 1,600 attempted contexts at each intensity. On each method's qualifying contexts, the profit ratio divides its total expected profit by the Oracle's total expected profit. These two metrics use analytic evaluation under censored Gaussian demand. Direct comparisons between two methods use only contexts where both return qualifying decisions. Error bars show one standard error across independent replications.
+
+
+\subsubsection{Other Shock Distributions}\label{app:stress-shock-robustness}
+
+At \(\alpha=0.10\) and \(\rho=0,0.50,1\), we repeat the stress test for standard normal, lognormal, and Student \(t_3\) shocks. The lognormal law has \(\log U\sim\mathcal N(0,1)\). Six replications per setting share historical prices, contexts, and shock quantiles across laws. We keep the training and validation sizes, estimators, and demand location and scale. Profit and reliability are evaluated under each generating distribution using its CDF and truncated first moments. The script \texttt{stress\_shock\_robustness.py} provides the replication and summary records.
+
+Table~\ref{tab:stress-shock-robustness} reports the number of replications with a fitted-feasible decision at all 80 contexts out of six attempted replications, with mean population reliability among those complete replications in parentheses. The profit ratio divides mean CCW profit by mean Oracle profit over the same replications with complete CCW decisions. At \(\rho=1\), CCW meets the mean reliability target under both alternative shocks. The corresponding profit ratios are 0.848 for lognormal and 0.972 for Student \(t_3\).
+
+\begin{table}[H]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{Decision comparisons across demand shocks at \(\alpha=0.10\).}\label{tab:stress-shock-robustness}
+\small
+\begin{tabular}{lccccccc}
+\toprule
+Shock & \(\rho\) & CCW & CQ--CCP & P--CCP & SAA--CCP & Oracle & Profit ratio \\
+\midrule
+Standard normal & \(0\) & 6 (1.000) & 6 (1.000) & 6 (1.000) & 6 (1.000) & 6 (1.000) & 1.000 \\
+ & \(0.50\) & 6 (0.913) & 0 (--) & 6 (0.886) & 0 (--) & 6 (0.918) & 0.980 \\
+ & \(1\) & 5 (0.936) & 0 (--) & 6 (0.867) & 0 (--) & 6 (0.950) & 0.975 \\
+\addlinespace
+Lognormal & \(0\) & 6 (1.000) & 6 (1.000) & 6 (1.000) & 6 (1.000) & 6 (1.000) & 0.999 \\
+ & \(0.50\) & 6 (0.894) & 6 (0.896) & 6 (0.846) & 6 (0.852) & 6 (0.930) & 1.007 \\
+ & \(1\) & 6 (0.952) & 0 (--) & 4 (0.599) & 0 (--) & 6 (0.931) & 0.848 \\
+\addlinespace
+Student \(t_3\) & \(0\) & 6 (0.989) & 6 (0.989) & 6 (0.989) & 6 (0.989) & 6 (0.989) & 0.998 \\
+ & \(0.50\) & 6 (0.896) & 0 (--) & 6 (0.878) & 0 (--) & 6 (0.901) & 0.981 \\
+ & \(1\) & 6 (0.913) & 0 (--) & 4 (0.697) & 0 (--) & 6 (0.916) & 0.972 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Contextual Estimation Diagnostic}\label{app:probability-design}
+
+In paper Section~5.1, price \(p\) and the market index \(x\) are independent uniforms on \([10,30]\) and \([-1,1]\), respectively. Conditional on \((p,x)\), demand is normal with mean \(90-2p+12x\) and standard deviation \(6+2x\), without truncation. Distances are Euclidean after mapping price to \((p-10)/20\) and the market index to \((x+1)/2\). The evaluation grid combines 15 equally spaced prices from 10 to 30, 9 market-index values from \(-1\) to 1, and 61 demand thresholds from 0 to 110. At each of \(N=1{,}000,\ 2{,}000,\ 5{,}000,\ 10{,}000,\ 30{,}000,\ 100{,}000\), the simulation uses 60 independent histories and seed 20261119.
+
+For \(r_N=(\log N/N)^{1/6}\), set \(k=\lceil Nr_N^2\rceil\) for kNN and \(h=0.6r_N\) for LSA. CART fits a squared-error regression tree to demand with minimum leaf size \(\lceil k/2\rceil\). The tree estimate assigns equal weight to observations in the selected leaf. The estimation rules share the same simulated history and evaluation grid in each replication. All evaluation pairs have nonempty clusters in the recorded runs.
+
+The probability error is the maximum absolute difference from the exact normal CDF on the grid. The intervals in paper Figure~2 use the Student \(t\) critical value and the standard error of the mean across replications. The accompanying script \texttt{theory\_validation.py} records the diagnostic with its replication and summary CSV files.
+
+The two reference curves in paper Figure~2 use weighted least squares with weights \(\sqrt N\) and \(r_N=(\log N/N)^{1/6}\). The kNN CDF fit \(1-\exp(-C r_N)\) has coefficient \(C=3.528\). The LSA fit \(C r_N\) has coefficient \(C=1.420\).
+
+\subsubsection{Other Shock Distributions}
+
+We repeat the CDF experiment with lognormal shocks with \(\log U\sim\mathcal N(0,1)\) and Student \(t_3\) shocks, using the location and scale in paper Section~5.1. For each shock law, we keep the same six sample sizes, 60 histories per size, evaluation grid, and estimator tuning. For demand threshold \(d\), the reference CDF is \(F_U((d-m(p,x))/\sigma(p,x))\), where \(m(p,x)=90-2p+12x\), \(\sigma(p,x)=6+2x\), and \(F_U\) is the shock CDF. Mean grid errors decrease at every successive sample size for all three estimators under each law. Table~\ref{tab:cdf-shock-robustness} reports the endpoints. The script \texttt{cdf\_shock\_robustness.py} records the full results.
+
+\begin{table}[H]
+\centering
+\caption{Mean maximum CDF error from \(N=1{,}000\) to \(N=100{,}000\).}\label{tab:cdf-shock-robustness}
+\begin{tabular}{lccc}
+\toprule
+Shock & kNN & LSA & CART \\
+\midrule
+Standard normal & \(0.773\to0.543\) & \(0.566\to0.329\) & \(0.734\to0.455\) \\
+Lognormal & \(0.732\to0.572\) & \(0.597\to0.416\) & \(0.745\to0.535\) \\
+Student \(t_3\) & \(0.703\to0.485\) & \(0.517\to0.302\) & \(0.658\to0.420\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsection{Expected Loss, Pointwise Feasibility, and Runtime}
+
+The kNN expected-loss diagnostic uses the six history sizes, 60 replications per size, and price--context draws in Section~\ref{app:probability-design}. It censors demand at zero for profit evaluation and uses 31 equally spaced quantities from 0 to 110. For each history the reported statistic is the maximum absolute difference between empirical and analytic expected loss over 15 prices, 9 contexts, and 31 quantities. With unit cost 5 and salvage value 2, the mean maximum error declines from 375.37 loss units at \(N=1{,}000\) to 189.30 at \(N=100{,}000\). The separate pointwise feasibility diagnostic records attempted decisions and their conditional target-attainment probabilities at \(\alpha=0.10\) for three intensities (\(\rho=0,0.50,1\)). These records and the files for the robustness tables are in \path{experiments/diagnostics/assets/data/}.
+
+For paper Figure~5, \path{experiments/runtime/timings.csv} records elapsed seconds for 361 runs by strategy, demand mode, sample size, and seed. The archived runs used one core of a Linux x64 FusionServer G5500 V6 with Python 3.10.12 and Gurobi 9.5.2. At \(N=6{,}000\), the ratios of mean runtime for SS--BD--Acc to that for SS--BD are 0.275, 0.274, and 0.300 in modes 1, 2, and 3, respectively. Timing comparisons use the records present for each strategy and mode.

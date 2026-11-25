@@ -1,0 +1,6 @@
+rho,method,n_test_contexts,n_true_feasible_nominal,n_true_feasible_margin,coverage_nominal,coverage_margin,coverage_change_pp
+0.0,CCW,1600,1600,1600,1.0,1.0,0.0
+0.25,CCW,1600,835,1529,0.521875,0.955625,43.375
+0.5,CCW,1600,1210,1568,0.75625,0.98,22.375
+0.75,CCW,1600,1396,1579,0.8725,0.986875,11.4375
+1.0,CCW,1600,1452,1585,0.9075,0.990625,8.3125

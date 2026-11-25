@@ -1,0 +1,49 @@
+\section{JD.com Evaluation Conventions}\label{app:case-detail}
+
+This section explains how the JD.com case combines transactions into daily observations, selects products, and specifies costs. It then describes how the archived setting labels and available records affect the interpretation of reported profit and reliability.
+
+\subsection{Data Processing and Demand Estimation}\label{app::caseData}
+
+The case uses March 2018 records from the JD.com orders and SKUs tables \citep{2024JD}. The release contains 486,928 unique orders and describes 31,868 SKUs in one product category. For each SKU, the archived procedure sums daily sales from its first to its last observed selling date and computes daily averages of the original and final unit prices. It merges the two product attributes and adds a weekend indicator. The initial pool consists of 90 SKUs with total sales above 1,000 units. After preprocessing, the data ultimately used as covariates and uncertain demand for the case study are described in Table~\ref{tab::real-data-description}. 
+
+\begin{table}[H]
+\centering
+\caption{Description of JD sales data\label{tab::real-data-description}}
+{%
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\linewidth}{@{}l l >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}
+\toprule
+Variable & Type & Description & Statistics \\ 
+\midrule
+skuID  & string & The IDs corresponding to different types of SKUs & 90 types in total, which are then further divided into dummy variables. \\
+Original\_unit\_price & float & The original price marked on the SKU & min 19.8, median 89, max 336. \\
+Final\_unit\_price & float & The average unit price on that day & min 8.9, median 63.2, max 224.7. \\
+Attribute1 & int & The first key attribute of the SKU & min 1, median 2, max 4. \\
+Attribute2 & int & The second key attribute of the SKU & min 30, median 60, max 100. \\
+Weekend & int & 1 means the sales date is a weekend, 0 otherwise & - \\
+Quantity & int & Daily sales volume of this type of SKU & min 0, median 53, max 2765. \\ 
+\bottomrule
+\end{tabularx}%
+}
+{}
+\end{table}
+
+The regression uses prices, both product attributes, the weekend indicator, and categorical SKU identifiers to predict daily demand. Random forest gives the best reported overall fit, with an \(R^2\) of 0.86. The case retains 14 SKUs with reported \(R^2\) of at least 0.88. The fitted demand model uses the empirical distribution of pooled residuals for evaluation.
+
+The evaluation uses daily sales as a demand proxy. The retained case-study materials do not specify whether daily prices are quantity-weighted. The release also provides warehouse-level day-end inventory availability, without inventory quantities, so observed sales do not recover all lost sales.
+
+\subsection{Costs and Candidate Prices}\label{app::caseParam}
+
+Economic calibration uses illustrative cost and salvage inputs. Unit cost equals the average final selling price divided by 1.021. The factor was motivated by the 2.1\% JD Mall operating margin reported in \href{https://ir.jd.com/news-releases/news-release-details/jdcom-announces-first-quarter-2018-results}{JD.com's first-quarter 2018 financial release}. The reported percentage measures a corporate operating margin, so the SKU cost factor is a study-specific assumption. Merchant discussions of carrying costs motivated a salvage value of 0.997 times unit cost. The paper's calibration specifies candidate prices from RMB~3 below to RMB~3 above the original price in increments of RMB~0.1.
+
+\subsection{Interpretation of Reported Results}
+
+Product screening and the evaluation split restrict the population represented by the results. The archive does not document an independent validation sample for screening or chronological ordering of the 80:20 split. Reported ratios concern the selected evaluation observations. The retained case-study materials also leave unresolved how observations without an estimated-feasible decision enter the reported results.
+
+Paper Table~1 labels the settings by the required probability \(1-\alpha\). Under that heading, the twelve reported mean CCW feasible rates (CFR) exceed their respective requirements. At \(1-\alpha=0.90\), the CFR values are 0.912, 0.903, and 0.902 for profit targets 0, 5, and 10. Earlier materials label the settings \(\alpha\). Reading that earlier label as an allowed violation probability would require reliability 0.90 on the row labeled 0.1, where the three reported rates are below 0.90. The available historical evaluation files do not establish which convention generated the table. The repository's case-study records distinguish the paper transcription from the historical files.
+
+The historical script uses the numerical input called \(\alpha\) as a required success fraction in the kNN order statistic. It takes a random sample of 80 evaluation rows, draws neighbors from the screened data, and evaluates expected profit contributions from residuals for which the target is reached, dividing by the total number of residuals. It filters unsuccessful solver runs, zero returned prices, and observations with a historical profit measure below 10. Its price grid starts two RMB below the integer part of the row's final unit price, tests 35 values spaced by RMB~0.1, and retains prices above cost. These details describe the archived implementation. Neither that script nor its archived outputs independently reproduce the twelve manuscript entries. Raw matched profit denominators and repeated evaluations are needed to quantify absolute gains and uncertainty for the selected products. The file \path{case/README.md} documents the available inputs and historical results.
+
+
+The histogram in paper Figure~6 reports a mean ratio of 1.96 for profit target \(v=10\). The archived November 25 manuscript also reported an improvement in 88.4\% of instances and attributed the histogram to \(\alpha=0.9\). The historical plotting script filters on \(v=10\) and pools the retained settings. The historical workbook has no observations at \((v,\alpha)=(10,0.9)\). The available records do not establish the sample behind the 88.4\% figure or a single probability setting for the histogram.

@@ -1,0 +1,136 @@
+{
+  "seed": 20261119,
+  "sample_sizes": [
+    1000,
+    2000,
+    5000,
+    10000,
+    30000,
+    100000
+  ],
+  "replications": 60,
+  "method": "kNN",
+  "conditioning_dimension": 2,
+  "historical_pairs": "Identical to theory_validation.py: independent scaled uniform price and context",
+  "raw_conditional_demand": "D|p,x ~ Normal(90-2p+12x, (6+2x)^2)",
+  "loss_demand": "Y=max(D,0); raw histories and original CDF data are unchanged",
+  "unit_cost": 5.0,
+  "salvage_value": 2.0,
+  "price_grid": [
+    10.0,
+    11.428571428571429,
+    12.857142857142858,
+    14.285714285714285,
+    15.714285714285715,
+    17.142857142857142,
+    18.57142857142857,
+    20.0,
+    21.42857142857143,
+    22.857142857142858,
+    24.285714285714285,
+    25.714285714285715,
+    27.142857142857142,
+    28.571428571428573,
+    30.0
+  ],
+  "context_grid": [
+    -1.0,
+    -0.75,
+    -0.5,
+    -0.25,
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "quantity_grid": [
+    0.0,
+    3.6666666666666665,
+    7.333333333333333,
+    11.0,
+    14.666666666666666,
+    18.333333333333332,
+    22.0,
+    25.666666666666664,
+    29.333333333333332,
+    33.0,
+    36.666666666666664,
+    40.33333333333333,
+    44.0,
+    47.666666666666664,
+    51.33333333333333,
+    55.0,
+    58.666666666666664,
+    62.33333333333333,
+    66.0,
+    69.66666666666666,
+    73.33333333333333,
+    77.0,
+    80.66666666666666,
+    84.33333333333333,
+    88.0,
+    91.66666666666666,
+    95.33333333333333,
+    99.0,
+    102.66666666666666,
+    106.33333333333333,
+    110.0
+  ],
+  "quantity_grid_reason": "31 equally spaced inventory levels including 0 and110; inventory capacity110 for this diagnostic, aligned with the probability threshold range",
+  "loss": "(p-s)*(q-max(D,0))_+ - (p-c)*q",
+  "exact_expected_leftover": "(q-mu)*Phi((q-mu)/sigma)+mu*Phi(-mu/sigma)+sigma*(phi((q-mu)/sigma)-phi(-mu/sigma))",
+  "exact_expected_loss": "(p-s)*exact_expected_leftover-(p-c)*q",
+  "knn_rule": "Use existing tuning(N)[0]; cKDTree kth distance, nextafter toward infinity, then query_ball_point to retain cutoff ties",
+  "sampling": "SeedSequence([theory_validation.SEED,N,replication]); same uniform pair draw followed by same standard-normal draws",
+  "error": "Maximum absolute empirical-minus-exact expected-loss error over 15 prices x9 contexts x31 quantities",
+  "error_units": "Absolute loss units, without normalization",
+  "error_range_bound": 3080.0,
+  "confidence_interval": "Two-sided95% Student-t interval for the mean of60 replication maximum-grid errors",
+  "implementation": "Sort raw demand once percluster; censor sorted values atzero and use cumulative sums and binary search for all31 quantities",
+  "interpretation": "Fixed-grid expected-loss diagnostic, not a certified continuum-uniform finite-sample error bound",
+  "elapsed_seconds": 25.790772500000003,
+  "source_and_probability_hashes": {
+    "theory_validation.py": "682022ea10e0549df0938d3ca81a4bc4a94e3031469e3442e08323647e0bb54c",
+    "assets\\data\\contextual_probability_20261119_replications.csv": "c1797def69849e5c7b2e15ad6f7bd338e3d2a2d7d454ce5b1c7aa06444c73d05",
+    "assets\\data\\contextual_probability_20261119_summary.csv": "c781d6c85b4421c81dacea3a34d6221da86712fbff24337f61235e1344d59fac"
+  },
+  "independent_validation": {
+    "maximum_independent_quadrature_discrepancy": 7.105427357601002e-15,
+    "maximum_prefix_sum_vs_brute_force_discrepancy": 0.0,
+    "cases": [
+      [
+        -8.0,
+        3.0,
+        4.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        2.5
+      ],
+      [
+        18.0,
+        4.0,
+        31.0
+      ],
+      [
+        62.0,
+        8.0,
+        110.0
+      ]
+    ]
+  },
+  "maximum_probability_recreation_discrepancy": 0.0,
+  "versions": {
+    "python": "3.10.7",
+    "numpy": "1.23.3",
+    "pandas": "1.4.4",
+    "scipy": "1.9.3"
+  }
+}

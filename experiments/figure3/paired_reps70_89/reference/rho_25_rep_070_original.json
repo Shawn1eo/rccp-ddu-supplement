@@ -1,0 +1,5838 @@
+{
+  "source_sha256": "46703c480e8bc9b10c0fa7a79d387ee493ec4f5cfc417ff5c6fbc28a477c2d0a",
+  "rho": 0.25,
+  "replication": 70,
+  "elapsed_seconds": 86.92086579999977,
+  "effective_alphas": [
+    0.1,
+    0.05
+  ],
+  "rows": [
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "CCW",
+      "alpha": 0.1,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 1043.7307928872326,
+      "reliability": 0.902855,
+      "true_coverage": 0.55,
+      "shortfall": 0.009805000000000012,
+      "estimated_reliability": 0.9065,
+      "calibration_mae": 0.022899444444444444,
+      "mean_price": 22.69375,
+      "mean_order": 103.7694706680403
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "CQ-CCP",
+      "alpha": 0.1,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 1065.8640035792382,
+      "reliability": 0.8730699999999999,
+      "true_coverage": 0.1625,
+      "shortfall": 0.029055000000000008,
+      "estimated_reliability": 0.9087412587412589,
+      "calibration_mae": 0.038654635364635356,
+      "mean_price": 24.28125,
+      "mean_order": 101.53754873113857
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "P-CCP",
+      "alpha": 0.1,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 1071.6142255930351,
+      "reliability": 0.81472,
+      "true_coverage": 0.025,
+      "shortfall": 0.08598500000000002,
+      "estimated_reliability": 0.9032812500000003,
+      "calibration_mae": 0.08997125000000002,
+      "mean_price": 27.35625,
+      "mean_order": 88.42670238942542
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "SAA-CCP",
+      "alpha": 0.1,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 1094.8201274202652,
+      "reliability": 0.7221949999999999,
+      "true_coverage": 0.0,
+      "shortfall": 0.177805,
+      "estimated_reliability": 0.9216666666666666,
+      "calibration_mae": 0.19947166666666666,
+      "mean_price": 30.0,
+      "mean_order": 116.61671607937305
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "Oracle",
+      "alpha": 0.1,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 1057.2444783734932,
+      "reliability": 0.9012399999999999,
+      "true_coverage": 0.6125,
+      "shortfall": 0.00205000000000001,
+      "estimated_reliability": 0.9009206476777148,
+      "calibration_mae": 0.004780533933581345,
+      "mean_price": 22.95,
+      "mean_order": 103.14335315061342
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "CCW",
+      "alpha": 0.05,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 974.150931725934,
+      "reliability": 0.948845,
+      "true_coverage": 0.6125,
+      "shortfall": 0.008369999999999985,
+      "estimated_reliability": 0.9488333333333333,
+      "calibration_mae": 0.015000555555555562,
+      "mean_price": 19.98125,
+      "mean_order": 99.93695734777575
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "CQ-CCP",
+      "alpha": 0.05,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 1015.56627214571,
+      "reliability": 0.9208299999999999,
+      "true_coverage": 0.075,
+      "shortfall": 0.02975999999999996,
+      "estimated_reliability": 0.9556568431568431,
+      "calibration_mae": 0.03511589410589411,
+      "mean_price": 21.8625,
+      "mean_order": 98.7167603014394
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "P-CCP",
+      "alpha": 0.05,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 924.1048654659188,
+      "reliability": 0.9516600000000001,
+      "true_coverage": 0.65,
+      "shortfall": 0.00988999999999998,
+      "estimated_reliability": 0.9499375000000001,
+      "calibration_mae": 0.02145562500000001,
+      "mean_price": 20.73125,
+      "mean_order": 75.76555368367822
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "SAA-CCP",
+      "alpha": 0.05,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 0.0,
+      "infeasible_context_rate": 1.0,
+      "policy_feasible": false,
+      "expected_profit": null,
+      "reliability": null,
+      "true_coverage": null,
+      "shortfall": null,
+      "estimated_reliability": null,
+      "calibration_mae": null,
+      "mean_price": null,
+      "mean_order": null
+    },
+    {
+      "rho": 0.25,
+      "replication": 70,
+      "method": "Oracle",
+      "alpha": 0.05,
+      "k_ccw": 225,
+      "ccw_action_weight": 2.0,
+      "ccw_validation_crps": 17.649771855051696,
+      "estimated_context_feasibility": 1.0,
+      "infeasible_context_rate": 0.0,
+      "policy_feasible": true,
+      "expected_profit": 984.0898556760206,
+      "reliability": 0.9503349999999999,
+      "true_coverage": 0.575,
+      "shortfall": 0.0014199999999999797,
+      "estimated_reliability": 0.9500892819845976,
+      "calibration_mae": 0.00309046913978836,
+      "mean_price": 20.05625,
+      "mean_order": 99.28143385736828
+    }
+  ],
+  "decisions": {
+    "0.1": {
+      "CCW": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 22.5,
+          "order": 111.56593518333374,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 20.5,
+          "order": 108.34896793669319,
+          "estimated_reliability": 0.9244444444444444
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 22.0,
+          "order": 106.57032860674687,
+          "estimated_reliability": 0.9244444444444444
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 24.0,
+          "order": 110.62930103573434,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 27.0,
+          "order": 103.97257501141,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.91649802835978,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 22.5,
+          "order": 114.64922073440758,
+          "estimated_reliability": 0.9022222222222223
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 24.5,
+          "order": 108.69612100526092,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 21.5,
+          "order": 99.14395823076372,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 19.5,
+          "order": 105.28049968534225,
+          "estimated_reliability": 0.96
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 22.5,
+          "order": 98.31696396893143,
+          "estimated_reliability": 0.9022222222222223
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 20.5,
+          "order": 103.07697582762334,
+          "estimated_reliability": 0.9111111111111111
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 23.5,
+          "order": 93.84646859982864,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 23.5,
+          "order": 106.55482721907701,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 23.0,
+          "order": 111.26288453386829,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 24.0,
+          "order": 105.53991090884772,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 21.5,
+          "order": 105.15831516245589,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 23.0,
+          "order": 106.61232465846093,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 20.0,
+          "order": 95.33304129771932,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 21.5,
+          "order": 96.0706356169988,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 19.5,
+          "order": 103.59812035947095,
+          "estimated_reliability": 0.9288888888888889
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 22.5,
+          "order": 87.9311289750304,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 23.0,
+          "order": 98.86411777971699,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 21.0,
+          "order": 98.92848958638926,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 20.5,
+          "order": 100.36419103808038,
+          "estimated_reliability": 0.9111111111111111
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 23.0,
+          "order": 100.58229903024873,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 21.5,
+          "order": 97.62346746056141,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 21.0,
+          "order": 99.25382403203922,
+          "estimated_reliability": 0.9022222222222223
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 24.5,
+          "order": 103.09616245295013,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 21.0,
+          "order": 105.91452905856285,
+          "estimated_reliability": 0.92
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 20.0,
+          "order": 103.36956326115734,
+          "estimated_reliability": 0.9422222222222222
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 22.5,
+          "order": 106.86816699128005,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 23.0,
+          "order": 108.10982144771602,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 24.0,
+          "order": 110.26868576769955,
+          "estimated_reliability": 0.9111111111111111
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 24.5,
+          "order": 96.57720026848072,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 25.5,
+          "order": 109.59282592102778,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 21.5,
+          "order": 107.2059655058641,
+          "estimated_reliability": 0.9111111111111111
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 27.5,
+          "order": 94.91484335758814,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 19.0,
+          "order": 96.00927858102492,
+          "estimated_reliability": 0.9422222222222222
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 23.0,
+          "order": 102.7384889500396,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 22.0,
+          "order": 108.00663547351516,
+          "estimated_reliability": 0.92
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 21.0,
+          "order": 101.01014803472638,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 24.0,
+          "order": 108.31028291373072,
+          "estimated_reliability": 0.9111111111111111
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 23.0,
+          "order": 111.26288453386829,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 23.0,
+          "order": 109.56917665373695,
+          "estimated_reliability": 0.92
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 22.5,
+          "order": 99.38528129391689,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 26.0,
+          "order": 85.1890659224869,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 24.0,
+          "order": 114.07702112546804,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 21.0,
+          "order": 92.75258513109286,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 24.0,
+          "order": 111.38132524541295,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 22.0,
+          "order": 111.33021934760359,
+          "estimated_reliability": 0.92
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 22.0,
+          "order": 103.51541032623531,
+          "estimated_reliability": 0.9022222222222223
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 21.5,
+          "order": 110.63714023619751,
+          "estimated_reliability": 0.9022222222222223
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 29.5,
+          "order": 119.89109289324333,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 20.5,
+          "order": 100.11271709050406,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 22.5,
+          "order": 100.04840114687188,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 24.0,
+          "order": 93.69029952177374,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 21.0,
+          "order": 102.42639328629811,
+          "estimated_reliability": 0.9377777777777778
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 20.5,
+          "order": 105.30527179049609,
+          "estimated_reliability": 0.9422222222222222
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 22.5,
+          "order": 106.82339502763524,
+          "estimated_reliability": 0.9022222222222223
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 23.0,
+          "order": 103.30161418297445,
+          "estimated_reliability": 0.8933333333333333
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 21.5,
+          "order": 108.34729118437957,
+          "estimated_reliability": 0.92
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 21.5,
+          "order": 103.79527106171463,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 21.0,
+          "order": 107.13851563304782,
+          "estimated_reliability": 0.9288888888888889
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 22.5,
+          "order": 104.38819723223634,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 24.5,
+          "order": 110.38205021164524,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 22.0,
+          "order": 106.15405798795723,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 20.0,
+          "order": 95.33304129771932,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 26.0,
+          "order": 104.22781058033922,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 27.0,
+          "order": 87.53035700385492,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 24.5,
+          "order": 121.79472904195717,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 20.0,
+          "order": 100.59310910532655,
+          "estimated_reliability": 0.92
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 24.5,
+          "order": 116.560204139585,
+          "estimated_reliability": 0.9155555555555556
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 24.0,
+          "order": 99.38567590662801,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 23.5,
+          "order": 106.55482721907701,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 21.0,
+          "order": 99.5297557412252,
+          "estimated_reliability": 0.9022222222222223
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 24.5,
+          "order": 96.09601739682198,
+          "estimated_reliability": 0.8977777777777778
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 24.0,
+          "order": 114.78379075962995,
+          "estimated_reliability": 0.9066666666666666
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 26.5,
+          "order": 109.30497180090835,
+          "estimated_reliability": 0.9111111111111111
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 19.5,
+          "order": 101.2746958845902,
+          "estimated_reliability": 0.9288888888888889
+        }
+      ],
+      "CQ-CCP": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 23.0,
+          "order": 110.89470730881435,
+          "estimated_reliability": 0.932067932067932
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 23.0,
+          "order": 103.26479058286459,
+          "estimated_reliability": 0.9110889110889111
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 23.0,
+          "order": 104.38001601642507,
+          "estimated_reliability": 0.922077922077922
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 26.5,
+          "order": 117.30662774217544,
+          "estimated_reliability": 0.9100899100899101
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 24.0,
+          "order": 101.10809428942413,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 26.5,
+          "order": 116.11245979239702,
+          "estimated_reliability": 0.9050949050949051
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 26.5,
+          "order": 119.0957014170262,
+          "estimated_reliability": 0.9020979020979021
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 26.5,
+          "order": 116.54572979426186,
+          "estimated_reliability": 0.903096903096903
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 23.0,
+          "order": 99.16119790650319,
+          "estimated_reliability": 0.9150849150849151
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 23.0,
+          "order": 104.29515919416826,
+          "estimated_reliability": 0.9110889110889111
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 23.0,
+          "order": 106.1003911907036,
+          "estimated_reliability": 0.936063936063936
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 24.0,
+          "order": 94.49504910194376,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 26.5,
+          "order": 86.78361366995499,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 23.0,
+          "order": 110.30384280743229,
+          "estimated_reliability": 0.932067932067932
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 26.5,
+          "order": 87.38675651028085,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 24.0,
+          "order": 95.48471906106818,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 23.0,
+          "order": 104.2164953369427,
+          "estimated_reliability": 0.9110889110889111
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 23.0,
+          "order": 102.09163974956242,
+          "estimated_reliability": 0.9170829170829171
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.49041714775353,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.8458444097281,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 23.0,
+          "order": 102.47845018611605,
+          "estimated_reliability": 0.9210789210789211
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 23.0,
+          "order": 102.55515158987292,
+          "estimated_reliability": 0.922077922077922
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 26.5,
+          "order": 87.58909815697491,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.49041714775353,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 23.0,
+          "order": 101.0892541285253,
+          "estimated_reliability": 0.913086913086913
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 23.0,
+          "order": 104.90807470452731,
+          "estimated_reliability": 0.9370629370629371
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.49041714775353,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.8458444097281,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 26.5,
+          "order": 117.14771323621447,
+          "estimated_reliability": 0.9050949050949051
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 23.0,
+          "order": 105.09275799640827,
+          "estimated_reliability": 0.9210789210789211
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.49041714775353,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 24.0,
+          "order": 93.37148118051704,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 26.5,
+          "order": 79.56988275946959,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 24.0,
+          "order": 95.48471906106818,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 26.5,
+          "order": 116.5273568679144,
+          "estimated_reliability": 0.9040959040959041
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 26.5,
+          "order": 115.23717193642463,
+          "estimated_reliability": 0.9050949050949051
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 23.0,
+          "order": 101.75406844461921,
+          "estimated_reliability": 0.913086913086913
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 26.5,
+          "order": 116.27773803072556,
+          "estimated_reliability": 0.9120879120879121
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.8458444097281,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 23.0,
+          "order": 100.20925506751041,
+          "estimated_reliability": 0.9140859140859141
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 23.0,
+          "order": 102.41348380601511,
+          "estimated_reliability": 0.9210789210789211
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 23.0,
+          "order": 93.43722942692328,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 24.0,
+          "order": 92.3204236272414,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 24.0,
+          "order": 95.48471906106818,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 23.0,
+          "order": 104.89912161953143,
+          "estimated_reliability": 0.936063936063936
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 23.0,
+          "order": 100.2832481776748,
+          "estimated_reliability": 0.9140859140859141
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 26.5,
+          "order": 117.85302141781979,
+          "estimated_reliability": 0.9100899100899101
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 26.5,
+          "order": 115.1501382247328,
+          "estimated_reliability": 0.903096903096903
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.49041714775353,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 26.5,
+          "order": 117.21332575807243,
+          "estimated_reliability": 0.903096903096903
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 24.0,
+          "order": 92.3204236272414,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 24.0,
+          "order": 92.3204236272414,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 23.0,
+          "order": 110.57861047543611,
+          "estimated_reliability": 0.9040959040959041
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 26.5,
+          "order": 115.83948418620751,
+          "estimated_reliability": 0.9120879120879121
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.49041714775353,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 23.0,
+          "order": 106.9424324529857,
+          "estimated_reliability": 0.9340659340659341
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 24.0,
+          "order": 95.48471906106818,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 23.0,
+          "order": 106.1003911907036,
+          "estimated_reliability": 0.936063936063936
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 24.0,
+          "order": 95.48471906106818,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 24.0,
+          "order": 95.48471906106818,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 26.5,
+          "order": 87.38675651028085,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 23.0,
+          "order": 105.87914582595424,
+          "estimated_reliability": 0.936063936063936
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 23.0,
+          "order": 104.80634692653881,
+          "estimated_reliability": 0.936063936063936
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 24.0,
+          "order": 95.48471906106818,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 23.0,
+          "order": 109.72332187354745,
+          "estimated_reliability": 0.9080919080919081
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 26.5,
+          "order": 117.46507955066456,
+          "estimated_reliability": 0.903096903096903
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 23.0,
+          "order": 101.5981224024452,
+          "estimated_reliability": 0.938061938061938
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 23.0,
+          "order": 93.43722942692328,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 24.0,
+          "order": 92.3204236272414,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 24.0,
+          "order": 93.26267692826816,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 26.5,
+          "order": 117.60488188740798,
+          "estimated_reliability": 0.9100899100899101
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 23.0,
+          "order": 92.93663190272265,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 26.5,
+          "order": 117.77568275872709,
+          "estimated_reliability": 0.9100899100899101
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 26.5,
+          "order": 85.35689268406595,
+          "estimated_reliability": 0.8991008991008991
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 26.5,
+          "order": 88.63372272451288,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.8458444097281,
+          "estimated_reliability": 0.9000999000999002
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 26.5,
+          "order": 123.93182639350312,
+          "estimated_reliability": 0.906093906093906
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 26.5,
+          "order": 115.76593456720126,
+          "estimated_reliability": 0.9040959040959041
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 26.5,
+          "order": 114.88840708588879,
+          "estimated_reliability": 0.9050949050949051
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.49041714775353,
+          "estimated_reliability": 0.8991008991008991
+        }
+      ],
+      "P-CCP": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 30.0,
+          "order": 98.01838914092116,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 25.5,
+          "order": 85.14955741106711,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 27.0,
+          "order": 86.79963914636987,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 30.0,
+          "order": 102.66559483548001,
+          "estimated_reliability": 0.913125
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 27.5,
+          "order": 87.22003672630747,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 30.0,
+          "order": 101.43739010892286,
+          "estimated_reliability": 0.91
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 30.0,
+          "order": 101.29902865178775,
+          "estimated_reliability": 0.909375
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 30.0,
+          "order": 99.67982379890195,
+          "estimated_reliability": 0.903125
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 24.0,
+          "order": 79.57789908469526,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 26.0,
+          "order": 84.26941307380945,
+          "estimated_reliability": 0.899375
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 28.5,
+          "order": 85.51003356790436,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 28.5,
+          "order": 84.35652506807695,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 30.0,
+          "order": 97.62194798269218,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 29.5,
+          "order": 87.79554686178331,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 30.0,
+          "order": 99.61230871693778,
+          "estimated_reliability": 0.903125
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 29.0,
+          "order": 83.79070889144782,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 26.5,
+          "order": 84.37002300182252,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 26.0,
+          "order": 85.80727138564747,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 21.5,
+          "order": 74.72334173904481,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 23.5,
+          "order": 80.48638275699635,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 26.5,
+          "order": 83.93882474196825,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 26.5,
+          "order": 82.55217448264189,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 29.5,
+          "order": 84.32442577473942,
+          "estimated_reliability": 0.899375
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 22.5,
+          "order": 79.76063139615714,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 24.5,
+          "order": 78.88239934187531,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 26.5,
+          "order": 85.71074431768778,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 21.0,
+          "order": 73.16291171908165,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 23.0,
+          "order": 78.59384273347304,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 30.0,
+          "order": 102.34326989633402,
+          "estimated_reliability": 0.913125
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 27.0,
+          "order": 84.2537234674076,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 22.0,
+          "order": 76.0038475662255,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 27.5,
+          "order": 86.39807489971014,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 29.5,
+          "order": 87.31167388519837,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 30.0,
+          "order": 84.07385228587077,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 30.0,
+          "order": 100.629478883844,
+          "estimated_reliability": 0.90625
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 30.0,
+          "order": 100.52182977066896,
+          "estimated_reliability": 0.90625
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 25.0,
+          "order": 84.80260181383369,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 30.0,
+          "order": 106.3054387751399,
+          "estimated_reliability": 0.926875
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 24.0,
+          "order": 78.25814763010976,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 24.5,
+          "order": 80.49264777854904,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 27.0,
+          "order": 83.55320909633679,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 24.5,
+          "order": 82.88557066311307,
+          "estimated_reliability": 0.899375
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 28.5,
+          "order": 87.44769966949787,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 30.0,
+          "order": 93.78049125521625,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 27.5,
+          "order": 86.23290972657573,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 23.5,
+          "order": 80.5363618216973,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 30.0,
+          "order": 105.6689901191527,
+          "estimated_reliability": 0.9225
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 30.0,
+          "order": 98.84143431189433,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 20.5,
+          "order": 71.09547007411952,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 30.0,
+          "order": 100.06550342253534,
+          "estimated_reliability": 0.904375
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 29.0,
+          "order": 85.4019241637953,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 28.0,
+          "order": 84.69583474342028,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 27.5,
+          "order": 87.8093674710431,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 30.0,
+          "order": 109.24066205067099,
+          "estimated_reliability": 0.94125
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 18.5,
+          "order": 63.951513567878614,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 29.0,
+          "order": 85.76788171373865,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 29.0,
+          "order": 83.86263738713869,
+          "estimated_reliability": 0.899375
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 28.0,
+          "order": 87.26203487629924,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 30.0,
+          "order": 84.87887315531782,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 30.0,
+          "order": 84.0286131513116,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 30.0,
+          "order": 101.1483773852229,
+          "estimated_reliability": 0.90875
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 28.0,
+          "order": 83.7303280913773,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 26.5,
+          "order": 86.10505417933093,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 29.0,
+          "order": 86.1368401797813,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 29.0,
+          "order": 85.31308084026966,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 30.0,
+          "order": 101.95949086657068,
+          "estimated_reliability": 0.910625
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 27.0,
+          "order": 87.39670494605805,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 24.0,
+          "order": 79.29501426430816,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 26.5,
+          "order": 82.74146915246654,
+          "estimated_reliability": 0.899375
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 26.5,
+          "order": 85.65846865133398,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 30.0,
+          "order": 102.75326276744252,
+          "estimated_reliability": 0.913125
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 24.0,
+          "order": 82.87607200394048,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 30.0,
+          "order": 108.90105607637632,
+          "estimated_reliability": 0.94
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 29.5,
+          "order": 88.80278892871513,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 30.0,
+          "order": 100.36393047803016,
+          "estimated_reliability": 0.90625
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 25.0,
+          "order": 80.48771081929307,
+          "estimated_reliability": 0.899375
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 30.0,
+          "order": 106.67981316104927,
+          "estimated_reliability": 0.9275
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 30.0,
+          "order": 97.6742533773298,
+          "estimated_reliability": 0.9
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 30.0,
+          "order": 99.4944896092958,
+          "estimated_reliability": 0.90125
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 20.5,
+          "order": 71.09959982395485,
+          "estimated_reliability": 0.899375
+        }
+      ],
+      "SAA-CCP": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 30.0,
+          "order": 116.61671607937305,
+          "estimated_reliability": 0.9216666666666666
+        }
+      ],
+      "Oracle": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 22.5,
+          "order": 103.0264418721221,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 20.5,
+          "order": 101.71466035044718,
+          "estimated_reliability": 0.9010872224605168
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 21.5,
+          "order": 104.65504508998049,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 25.5,
+          "order": 122.63082898131223,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 25.0,
+          "order": 102.61494845518186,
+          "estimated_reliability": 0.9000700505510602
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 26.5,
+          "order": 108.84254268090713,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 24.0,
+          "order": 113.26901625721757,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 25.0,
+          "order": 113.44262122467403,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 21.5,
+          "order": 95.77495402374683,
+          "estimated_reliability": 0.9025205233017474
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 22.0,
+          "order": 99.30457438361323,
+          "estimated_reliability": 0.904252227645369
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 23.0,
+          "order": 96.89225218375732,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 22.5,
+          "order": 103.42329318219377,
+          "estimated_reliability": 0.9029372836130773
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 24.0,
+          "order": 102.39390039080304,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 22.5,
+          "order": 108.94327542498812,
+          "estimated_reliability": 0.9004885287101881
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 23.5,
+          "order": 109.40062082990187,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 24.0,
+          "order": 101.73874446820884,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 21.0,
+          "order": 96.16799755862418,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 21.5,
+          "order": 98.76568220907836,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 20.0,
+          "order": 95.11234340008377,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 20.5,
+          "order": 88.35763509881694,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 21.0,
+          "order": 99.30567399675724,
+          "estimated_reliability": 0.9136104685136518
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 22.5,
+          "order": 96.89556771377748,
+          "estimated_reliability": 0.9053971112999835
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 24.0,
+          "order": 113.5437456614635,
+          "estimated_reliability": 0.9018544481310898
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 19.5,
+          "order": 91.1981032119113,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 21.5,
+          "order": 97.02971821874448,
+          "estimated_reliability": 0.9031312387103242
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 23.5,
+          "order": 99.24054904932751,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 20.0,
+          "order": 95.02403350917461,
+          "estimated_reliability": 0.9002271461024116
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 20.0,
+          "order": 90.40193982187334,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 25.5,
+          "order": 116.71322585504771,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 21.5,
+          "order": 104.66889929757296,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 20.5,
+          "order": 91.39932789867088,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 23.0,
+          "order": 104.22284068883624,
+          "estimated_reliability": 0.90160168489048
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 24.0,
+          "order": 109.5496243866432,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 23.0,
+          "order": 112.47240938511828,
+          "estimated_reliability": 0.9017002512824168
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 27.0,
+          "order": 104.75826668155577,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 26.5,
+          "order": 113.79605940820005,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 22.0,
+          "order": 96.53915080177124,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 28.0,
+          "order": 113.68892419353898,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 21.0,
+          "order": 95.37009138008523,
+          "estimated_reliability": 0.9033514139891865
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 21.0,
+          "order": 89.61862569361934,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 20.5,
+          "order": 101.83346895604586,
+          "estimated_reliability": 0.9084204277683889
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 20.0,
+          "order": 96.93073808865266,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 22.5,
+          "order": 109.56968139736433,
+          "estimated_reliability": 0.9010199161807069
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 22.5,
+          "order": 103.89833627205128,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 22.0,
+          "order": 104.01969815548507,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 21.0,
+          "order": 90.3069591741156,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 26.0,
+          "order": 115.87366868189018,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 25.0,
+          "order": 115.85717758601403,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 20.0,
+          "order": 91.80279901509716,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 24.0,
+          "order": 120.01583546679132,
+          "estimated_reliability": 0.9015235692886239
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 22.0,
+          "order": 103.67387917089256,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 24.0,
+          "order": 102.58021498135744,
+          "estimated_reliability": 0.9025240852552214
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 21.0,
+          "order": 97.85878890858464,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 29.0,
+          "order": 122.11628812025667,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 20.5,
+          "order": 85.69108095736237,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 21.5,
+          "order": 99.76317955796709,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 24.0,
+          "order": 108.74111830581137,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 22.5,
+          "order": 104.04426047660536,
+          "estimated_reliability": 0.9006033289938672
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 24.0,
+          "order": 97.76166680910895,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 23.5,
+          "order": 101.95726144541072,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 23.0,
+          "order": 111.58786551815997,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 22.0,
+          "order": 102.29955323095658,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 22.5,
+          "order": 98.71909581089382,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 24.5,
+          "order": 97.7031399216856,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 21.5,
+          "order": 98.43378595638042,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 25.5,
+          "order": 110.32880900860941,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 21.5,
+          "order": 95.53234749876275,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 21.5,
+          "order": 94.53148415588754,
+          "estimated_reliability": 0.9050078475408293
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 24.0,
+          "order": 99.65656335865394,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 24.0,
+          "order": 99.74496193861393,
+          "estimated_reliability": 0.9005349132998937
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 25.5,
+          "order": 116.75032007737776,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 21.0,
+          "order": 95.75697574505203,
+          "estimated_reliability": 0.9117881266881429
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 27.5,
+          "order": 114.47811688635227,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 24.0,
+          "order": 108.32527604733099,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 23.0,
+          "order": 109.48859587951038,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 20.5,
+          "order": 89.98604523297115,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 27.0,
+          "order": 112.68481537880508,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 25.0,
+          "order": 114.73491654777344,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 26.0,
+          "order": 112.58436974489955,
+          "estimated_reliability": 0.8999999999999999
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 19.5,
+          "order": 91.93695766418399,
+          "estimated_reliability": 0.8999999999999999
+        }
+      ]
+    },
+    "0.05": {
+      "CCW": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 20.5,
+          "order": 102.61000148900528,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 19.0,
+          "order": 106.9646871311358,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 21.5,
+          "order": 93.01907307265583,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 22.5,
+          "order": 85.0295972816528,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 21.5,
+          "order": 105.1682422656339,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 20.5,
+          "order": 102.48413033558683,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 21.0,
+          "order": 89.77926778019457,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 21.5,
+          "order": 93.01907307265583,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 19.0,
+          "order": 83.23856090745461,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 19.5,
+          "order": 105.28049968534225,
+          "estimated_reliability": 0.96
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 20.5,
+          "order": 97.44978884392276,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 19.0,
+          "order": 103.69931216849122,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 20.0,
+          "order": 107.74839192114898,
+          "estimated_reliability": 0.9555555555555556
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 20.0,
+          "order": 109.8534482072775,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 20.0,
+          "order": 111.65349442676013,
+          "estimated_reliability": 0.9555555555555556
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 19.5,
+          "order": 101.7379518489517,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 18.0,
+          "order": 101.28129667390952,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 20.0,
+          "order": 90.09573115691273,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 16.5,
+          "order": 101.59520934321048,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 19.5,
+          "order": 95.16186205197131,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 19.0,
+          "order": 97.77433590871264,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 19.5,
+          "order": 86.23255001997698,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 19.0,
+          "order": 95.99981127627898,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 16.0,
+          "order": 99.23076896998116,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 19.5,
+          "order": 84.19200071246966,
+          "estimated_reliability": 0.9422222222222222
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 19.5,
+          "order": 101.46440798001807,
+          "estimated_reliability": 0.9555555555555556
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 18.5,
+          "order": 95.69765702283735,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 16.5,
+          "order": 93.89412878009824,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 20.5,
+          "order": 106.76753630621916,
+          "estimated_reliability": 0.96
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 19.0,
+          "order": 96.46686371872687,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 20.0,
+          "order": 98.8331533486943,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 19.5,
+          "order": 90.3804308883954,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 21.0,
+          "order": 89.77926778019457,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 21.0,
+          "order": 108.38835737944169,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 20.5,
+          "order": 104.61781058724726,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 21.0,
+          "order": 109.95660669641596,
+          "estimated_reliability": 0.9555555555555556
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 20.5,
+          "order": 90.90773408651553,
+          "estimated_reliability": 0.9422222222222222
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 23.0,
+          "order": 112.3204497586672,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 18.5,
+          "order": 98.58884779632415,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 20.0,
+          "order": 102.40815384857387,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 20.0,
+          "order": 105.48655174648003,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 18.0,
+          "order": 98.71186239793174,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 20.0,
+          "order": 103.45773922154665,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 20.0,
+          "order": 116.45379844829151,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 20.5,
+          "order": 103.80983681645144,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 21.0,
+          "order": 99.97428758096207,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 23.0,
+          "order": 102.7384889500396,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 21.0,
+          "order": 111.63068943358027,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 19.0,
+          "order": 96.46686371872687,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 21.0,
+          "order": 109.23953472595541,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 22.0,
+          "order": 71.58709608244014,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 19.5,
+          "order": 102.14106351903251,
+          "estimated_reliability": 0.96
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 18.5,
+          "order": 102.32651107810572,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 25.0,
+          "order": 99.63763547899167,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 18.0,
+          "order": 95.2337214570609,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 19.0,
+          "order": 104.73209581258062,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 19.5,
+          "order": 99.59309966651855,
+          "estimated_reliability": 0.9644444444444444
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 19.5,
+          "order": 104.33299202415326,
+          "estimated_reliability": 0.9555555555555556
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 20.5,
+          "order": 86.5394624877333,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 19.5,
+          "order": 106.40600642464895,
+          "estimated_reliability": 0.9644444444444444
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 19.5,
+          "order": 103.72303006092697,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 19.0,
+          "order": 105.4568740140063,
+          "estimated_reliability": 0.9555555555555556
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 20.0,
+          "order": 90.09573115691273,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 20.0,
+          "order": 105.77557784554136,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 20.5,
+          "order": 111.5548222548847,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 21.0,
+          "order": 108.84280150153722,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 20.0,
+          "order": 98.8331533486943,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 18.5,
+          "order": 79.80997578272554,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 19.0,
+          "order": 101.29728993448924,
+          "estimated_reliability": 0.96
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 21.0,
+          "order": 101.34755705380545,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 22.5,
+          "order": 99.49868365757834,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 19.0,
+          "order": 97.77433590871264,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 21.5,
+          "order": 109.69820850681323,
+          "estimated_reliability": 0.9511111111111111
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 19.0,
+          "order": 108.99701616757419,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 20.0,
+          "order": 107.63892615790583,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 17.5,
+          "order": 86.30123354240483,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 21.5,
+          "order": 110.1490740176236,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 20.0,
+          "order": 103.60764331213852,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 24.5,
+          "order": 94.03338207763001,
+          "estimated_reliability": 0.9466666666666667
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 18.5,
+          "order": 99.25144191926073,
+          "estimated_reliability": 0.9466666666666667
+        }
+      ],
+      "CQ-CCP": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.63295787036428,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 19.5,
+          "order": 102.94223069311124,
+          "estimated_reliability": 0.9600399600399601
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 23.0,
+          "order": 77.43537883216383,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 23.0,
+          "order": 113.7954507999293,
+          "estimated_reliability": 0.9590409590409591
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 23.0,
+          "order": 100.551684190503,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 23.0,
+          "order": 112.68418726219164,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 23.0,
+          "order": 116.89403207190368,
+          "estimated_reliability": 0.954045954045954
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 23.0,
+          "order": 113.20416765338058,
+          "estimated_reliability": 0.9560439560439561
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 19.5,
+          "order": 97.29704058483749,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 19.5,
+          "order": 101.58432896089357,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.63295787036428,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 23.0,
+          "order": 98.24727033076955,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 23.0,
+          "order": 106.4896451037831,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.22389075216967,
+          "estimated_reliability": 0.949050949050949
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 23.0,
+          "order": 95.87533264337782,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.22389075216967,
+          "estimated_reliability": 0.949050949050949
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 19.5,
+          "order": 102.23133016366675,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 23.0,
+          "order": 74.34109107972263,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 19.5,
+          "order": 99.49245366317196,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 19.5,
+          "order": 100.21085496924165,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 19.5,
+          "order": 100.71294591465069,
+          "estimated_reliability": 0.9630369630369631
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 23.0,
+          "order": 75.12761859760037,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 23.0,
+          "order": 107.28962657049529,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 19.5,
+          "order": 100.48372759949496,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 19.5,
+          "order": 98.83804333303426,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 23.0,
+          "order": 88.95954681432812,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 19.5,
+          "order": 97.49273838684333,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 19.5,
+          "order": 100.4198395188678,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 23.0,
+          "order": 113.53386244141086,
+          "estimated_reliability": 0.9600399600399601
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 23.0,
+          "order": 77.43537883216383,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 19.5,
+          "order": 102.26325287061313,
+          "estimated_reliability": 0.9600399600399601
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.33858609903587,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.22389075216967,
+          "estimated_reliability": 0.949050949050949
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 23.0,
+          "order": 86.36076118326622,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 23.0,
+          "order": 112.96961482872311,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 23.0,
+          "order": 111.87701683392929,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 19.5,
+          "order": 99.70548270825623,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 23.0,
+          "order": 112.66806294218328,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 19.5,
+          "order": 97.68484258862877,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 19.5,
+          "order": 98.36956115797955,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 19.5,
+          "order": 100.29981390802166,
+          "estimated_reliability": 0.9630369630369631
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 19.5,
+          "order": 100.29580027330113,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 23.0,
+          "order": 86.36076118326622,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.22389075216967,
+          "estimated_reliability": 0.949050949050949
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.22389075216967,
+          "estimated_reliability": 0.949050949050949
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 19.5,
+          "order": 98.66985222104489,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 23.0,
+          "order": 114.36362902611339,
+          "estimated_reliability": 0.9590409590409591
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 23.0,
+          "order": 111.8051523276499,
+          "estimated_reliability": 0.957042957042957
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 19.5,
+          "order": 103.52090515440699,
+          "estimated_reliability": 0.9600399600399601
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 23.0,
+          "order": 113.635996928954,
+          "estimated_reliability": 0.955044955044955
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 23.0,
+          "order": 86.36076118326622,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 23.0,
+          "order": 90.23174350142615,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 19.5,
+          "order": 110.92415485557197,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 23.0,
+          "order": 113.17317201513185,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 19.5,
+          "order": 96.84057431256969,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 23.0,
+          "order": 86.36076118326622,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 23.0,
+          "order": 86.36076118326622,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.63295787036428,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.63295787036428,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.22389075216967,
+          "estimated_reliability": 0.949050949050949
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 23.0,
+          "order": 106.4896451037831,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.63295787036428,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.22389075216967,
+          "estimated_reliability": 0.949050949050949
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 23.0,
+          "order": 87.63295787036428,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 19.5,
+          "order": 110.48684149859568,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 23.0,
+          "order": 113.88318129481159,
+          "estimated_reliability": 0.9560439560439561
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 23.0,
+          "order": 86.0663894119378,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 19.5,
+          "order": 97.41260509512782,
+          "estimated_reliability": 0.962037962037962
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 23.0,
+          "order": 89.82267638323157,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 23.0,
+          "order": 100.84605596183142,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 23.0,
+          "order": 114.06375787559715,
+          "estimated_reliability": 0.9590409590409591
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 19.5,
+          "order": 98.95360784332459,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 23.0,
+          "order": 114.34400932052901,
+          "estimated_reliability": 0.9590409590409591
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 23.0,
+          "order": 98.61382387895806,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 23.0,
+          "order": 106.4896451037831,
+          "estimated_reliability": 0.9500499500499501
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 19.5,
+          "order": 100.36842455627605,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 23.0,
+          "order": 120.17090434759889,
+          "estimated_reliability": 0.9600399600399601
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 23.0,
+          "order": 112.25470442734117,
+          "estimated_reliability": 0.957042957042957
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 23.0,
+          "order": 111.62789908354654,
+          "estimated_reliability": 0.961038961038961
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 19.5,
+          "order": 97.07084296009452,
+          "estimated_reliability": 0.962037962037962
+        }
+      ],
+      "P-CCP": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 22.5,
+          "order": 82.111513453351,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 18.5,
+          "order": 72.38654053483238,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 20.0,
+          "order": 73.1134752311422,
+          "estimated_reliability": 0.949375
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 25.0,
+          "order": 87.89265950838241,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 20.0,
+          "order": 76.95121035980908,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 24.0,
+          "order": 87.89771505759576,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 24.0,
+          "order": 86.88306437193835,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 23.0,
+          "order": 84.23172031954046,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 17.5,
+          "order": 64.959439665731,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 19.0,
+          "order": 71.72448997725492,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 20.5,
+          "order": 78.97816198012295,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 20.5,
+          "order": 78.17288246137548,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 22.5,
+          "order": 81.82126189107619,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 21.5,
+          "order": 79.6706741552632,
+          "estimated_reliability": 0.949375
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 23.0,
+          "order": 83.75911474579135,
+          "estimated_reliability": 0.949375
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 21.0,
+          "order": 77.36524583740773,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 19.5,
+          "order": 71.63680698884723,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 19.0,
+          "order": 72.81380628147353,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 16.0,
+          "order": 54.569656787293944,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 17.5,
+          "order": 62.29075910708523,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 19.5,
+          "order": 71.32880823180847,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 19.0,
+          "order": 73.98701837707848,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 21.0,
+          "order": 81.2982278509939,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 16.5,
+          "order": 61.48244096943745,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 17.5,
+          "order": 67.79131220083428,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 19.5,
+          "order": 72.5944650716081,
+          "estimated_reliability": 0.949375
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 15.5,
+          "order": 53.19902722683755,
+          "estimated_reliability": 0.949375
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 17.0,
+          "order": 60.84662072163627,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 25.0,
+          "order": 85.42150164159641,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 19.5,
+          "order": 75.07253098748244,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 16.0,
+          "order": 58.54224442685074,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 20.0,
+          "order": 76.37100201162274,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 21.5,
+          "order": 79.32756422641198,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 21.5,
+          "order": 80.62168179134034,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 23.5,
+          "order": 86.528799751092,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 23.5,
+          "order": 85.75731444000421,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 18.5,
+          "order": 68.74162305710858,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 27.5,
+          "order": 93.35216077701898,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 17.5,
+          "order": 64.02961477727304,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 18.0,
+          "order": 65.68283829991856,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 19.5,
+          "order": 74.58217092773288,
+          "estimated_reliability": 0.949375
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 18.0,
+          "order": 67.38447235116405,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 20.5,
+          "order": 80.33087227746182,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 22.0,
+          "order": 83.31161545720714,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 20.0,
+          "order": 76.25441483058664,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 17.5,
+          "order": 62.326790525823164,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 27.0,
+          "order": 92.83797434940719,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 22.5,
+          "order": 82.7970663953065,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 15.0,
+          "order": 51.385860209134194,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 23.5,
+          "order": 82.48697561171339,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 21.0,
+          "order": 78.49906399202268,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 20.5,
+          "order": 74.8383265454438,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 20.0,
+          "order": 77.36720853256365,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 30.0,
+          "order": 95.00613972408597,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 14.0,
+          "order": 40.09351167536946,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 21.0,
+          "order": 78.75658967531615,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 21.0,
+          "order": 77.41586218622719,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 20.5,
+          "order": 76.6642766399923,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 21.5,
+          "order": 81.18232132541955,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 21.5,
+          "order": 80.5901759654867,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 24.0,
+          "order": 85.77828841712943,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 20.0,
+          "order": 78.02560283231776,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 19.5,
+          "order": 72.87611497278174,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 21.0,
+          "order": 79.01622711438318,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 21.0,
+          "order": 78.43654461620834,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 24.5,
+          "order": 87.19627501154436,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 20.0,
+          "order": 73.54336260691771,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 17.5,
+          "order": 64.76013445136732,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 19.0,
+          "order": 74.1183656989976,
+          "estimated_reliability": 0.949375
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 19.5,
+          "order": 72.55712530992675,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 25.0,
+          "order": 88.56478032009493,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 17.5,
+          "order": 67.28315240429013,
+          "estimated_reliability": 0.949375
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 30.0,
+          "order": 91.83648396400237,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 21.5,
+          "order": 80.3849003481785,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 23.5,
+          "order": 84.62570284275934,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 18.0,
+          "order": 69.06448129095224,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 28.0,
+          "order": 91.67536764171943,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 22.5,
+          "order": 81.85955691215021,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 23.0,
+          "order": 82.9343809922974,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 15.0,
+          "order": 51.388762195505,
+          "estimated_reliability": 0.95
+        }
+      ],
+      "SAA-CCP": [
+        {
+          "context_index": 0,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 1,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 2,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 3,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 4,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 5,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 6,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 7,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 8,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 9,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 10,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 11,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 12,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 13,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 14,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 15,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 16,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 17,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 18,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 19,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 20,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 21,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 22,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 23,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 24,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 25,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 26,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 27,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 28,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 29,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 30,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 31,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 32,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 33,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 34,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 35,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 36,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 37,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 38,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 39,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 40,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 41,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 42,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 43,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 44,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 45,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 46,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 47,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 48,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 49,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 50,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 51,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 52,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 53,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 54,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 55,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 56,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 57,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 58,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 59,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 60,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 61,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 62,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 63,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 64,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 65,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 66,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 67,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 68,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 69,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 70,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 71,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 72,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 73,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 74,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 75,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 76,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 77,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 78,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        },
+        {
+          "context_index": 79,
+          "feasible": false,
+          "price": null,
+          "order": null,
+          "estimated_reliability": null
+        }
+      ],
+      "Oracle": [
+        {
+          "context_index": 0,
+          "feasible": true,
+          "price": 19.5,
+          "order": 103.2536010192887,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 1,
+          "feasible": true,
+          "price": 18.0,
+          "order": 92.70298084095138,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 2,
+          "feasible": true,
+          "price": 19.0,
+          "order": 89.40625847516651,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 3,
+          "feasible": true,
+          "price": 22.5,
+          "order": 106.37306929044765,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 4,
+          "feasible": true,
+          "price": 22.0,
+          "order": 100.23102433887321,
+          "estimated_reliability": 0.9530086433012562
+        },
+        {
+          "context_index": 5,
+          "feasible": true,
+          "price": 23.0,
+          "order": 101.17441994940073,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 6,
+          "feasible": true,
+          "price": 20.5,
+          "order": 107.11783510337602,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 7,
+          "feasible": true,
+          "price": 22.0,
+          "order": 102.627694886681,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 8,
+          "feasible": true,
+          "price": 19.0,
+          "order": 93.40289863971925,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 9,
+          "feasible": true,
+          "price": 19.5,
+          "order": 99.85067039479154,
+          "estimated_reliability": 0.9507767083964147
+        },
+        {
+          "context_index": 10,
+          "feasible": true,
+          "price": 20.0,
+          "order": 102.47507691596097,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 11,
+          "feasible": true,
+          "price": 20.0,
+          "order": 103.61403274130778,
+          "estimated_reliability": 0.9500182978094978
+        },
+        {
+          "context_index": 12,
+          "feasible": true,
+          "price": 21.0,
+          "order": 100.33041325566732,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 13,
+          "feasible": true,
+          "price": 20.0,
+          "order": 93.82724475815793,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 14,
+          "feasible": true,
+          "price": 20.5,
+          "order": 104.81990039876477,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 15,
+          "feasible": true,
+          "price": 21.0,
+          "order": 97.62482738819999,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 16,
+          "feasible": true,
+          "price": 18.0,
+          "order": 95.6498546393173,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 17,
+          "feasible": true,
+          "price": 19.0,
+          "order": 97.60565357807222,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 18,
+          "feasible": true,
+          "price": 17.5,
+          "order": 92.66255588934887,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 19,
+          "feasible": true,
+          "price": 17.5,
+          "order": 90.82833438230591,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 20,
+          "feasible": true,
+          "price": 19.5,
+          "order": 91.74222829757285,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 21,
+          "feasible": true,
+          "price": 20.5,
+          "order": 93.18248787990683,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 22,
+          "feasible": true,
+          "price": 21.5,
+          "order": 94.52101931034917,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 23,
+          "feasible": true,
+          "price": 16.5,
+          "order": 98.62353735001336,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 24,
+          "feasible": true,
+          "price": 19.0,
+          "order": 92.93790959256118,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 25,
+          "feasible": true,
+          "price": 20.5,
+          "order": 96.74895091502565,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 26,
+          "feasible": true,
+          "price": 17.5,
+          "order": 91.14630771619356,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 27,
+          "feasible": true,
+          "price": 17.0,
+          "order": 95.97392433870466,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 28,
+          "feasible": true,
+          "price": 22.0,
+          "order": 111.92662966068383,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 29,
+          "feasible": true,
+          "price": 18.5,
+          "order": 96.32666468237521,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 30,
+          "feasible": true,
+          "price": 17.5,
+          "order": 96.70223648530741,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 31,
+          "feasible": true,
+          "price": 20.5,
+          "order": 99.29059013646405,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 32,
+          "feasible": true,
+          "price": 21.0,
+          "order": 103.26183987179168,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 33,
+          "feasible": true,
+          "price": 20.0,
+          "order": 100.74023298197778,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 34,
+          "feasible": true,
+          "price": 23.0,
+          "order": 111.48148004369241,
+          "estimated_reliability": 0.9501717471659455
+        },
+        {
+          "context_index": 35,
+          "feasible": true,
+          "price": 23.0,
+          "order": 109.6847342786178,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 36,
+          "feasible": true,
+          "price": 19.5,
+          "order": 94.74916079022432,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 37,
+          "feasible": true,
+          "price": 24.0,
+          "order": 112.10880086873033,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 38,
+          "feasible": true,
+          "price": 19.0,
+          "order": 88.59156064237364,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 39,
+          "feasible": true,
+          "price": 18.0,
+          "order": 93.68743250436542,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 40,
+          "feasible": true,
+          "price": 18.5,
+          "order": 98.97452631031639,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 41,
+          "feasible": true,
+          "price": 17.0,
+          "order": 97.84482850535005,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 42,
+          "feasible": true,
+          "price": 19.5,
+          "order": 98.5675781380401,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 43,
+          "feasible": true,
+          "price": 19.5,
+          "order": 100.92174977768094,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 44,
+          "feasible": true,
+          "price": 19.5,
+          "order": 92.44207146308575,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 45,
+          "feasible": true,
+          "price": 18.0,
+          "order": 91.00205451303707,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 46,
+          "feasible": true,
+          "price": 22.5,
+          "order": 112.0353437116355,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 47,
+          "feasible": true,
+          "price": 22.0,
+          "order": 106.47804532162483,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 48,
+          "feasible": true,
+          "price": 17.0,
+          "order": 98.60108488192323,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 49,
+          "feasible": true,
+          "price": 21.0,
+          "order": 103.7767997293784,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 50,
+          "feasible": true,
+          "price": 19.0,
+          "order": 91.81466384622296,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 51,
+          "feasible": true,
+          "price": 21.5,
+          "order": 97.87696852234541,
+          "estimated_reliability": 0.95
+        },
+        {
+          "context_index": 52,
+          "feasible": true,
+          "price": 18.0,
+          "order": 91.6543511366818,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 53,
+          "feasible": true,
+          "price": 25.5,
+          "order": 112.38938711714229,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 54,
+          "feasible": true,
+          "price": 17.5,
+          "order": 91.71038295148668,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 55,
+          "feasible": true,
+          "price": 18.5,
+          "order": 91.98870203452383,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 56,
+          "feasible": true,
+          "price": 21.0,
+          "order": 103.52907772743055,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 57,
+          "feasible": true,
+          "price": 20.0,
+          "order": 99.52423930428243,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 58,
+          "feasible": true,
+          "price": 21.0,
+          "order": 98.74409249892501,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 59,
+          "feasible": true,
+          "price": 20.5,
+          "order": 99.30190587276884,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 60,
+          "feasible": true,
+          "price": 20.0,
+          "order": 106.39957347432438,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 61,
+          "feasible": true,
+          "price": 19.5,
+          "order": 97.2424798257286,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 62,
+          "feasible": true,
+          "price": 19.5,
+          "order": 98.63706033836985,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 63,
+          "feasible": true,
+          "price": 21.5,
+          "order": 98.89480913689238,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 64,
+          "feasible": true,
+          "price": 18.5,
+          "order": 104.62711133937513,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 65,
+          "feasible": true,
+          "price": 22.0,
+          "order": 107.45220530499438,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 66,
+          "feasible": true,
+          "price": 18.0,
+          "order": 99.01407065902477,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 67,
+          "feasible": true,
+          "price": 19.5,
+          "order": 87.61399372225111,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 68,
+          "feasible": true,
+          "price": 21.5,
+          "order": 94.05672804314504,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 69,
+          "feasible": true,
+          "price": 21.5,
+          "order": 96.68785102667543,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 70,
+          "feasible": true,
+          "price": 22.5,
+          "order": 103.00440386204156,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 71,
+          "feasible": true,
+          "price": 19.0,
+          "order": 97.52743430141454,
+          "estimated_reliability": 0.9515606444347565
+        },
+        {
+          "context_index": 72,
+          "feasible": true,
+          "price": 24.0,
+          "order": 104.30428410357437,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 73,
+          "feasible": true,
+          "price": 21.0,
+          "order": 106.44066813796206,
+          "estimated_reliability": 0.9510918216027388
+        },
+        {
+          "context_index": 74,
+          "feasible": true,
+          "price": 20.0,
+          "order": 107.01235967254901,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 75,
+          "feasible": true,
+          "price": 17.5,
+          "order": 93.21707667369402,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 76,
+          "feasible": true,
+          "price": 23.0,
+          "order": 107.45065540337775,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 77,
+          "feasible": true,
+          "price": 22.0,
+          "order": 106.04087819540325,
+          "estimated_reliability": 0.9500000000000001
+        },
+        {
+          "context_index": 78,
+          "feasible": true,
+          "price": 22.5,
+          "order": 109.64452958698023,
+          "estimated_reliability": 0.950514696057208
+        },
+        {
+          "context_index": 79,
+          "feasible": true,
+          "price": 17.0,
+          "order": 89.06260718507154,
+          "estimated_reliability": 0.9500000000000001
+        }
+      ]
+    }
+  }
+}

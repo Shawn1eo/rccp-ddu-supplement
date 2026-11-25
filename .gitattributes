@@ -1,0 +1,7 @@
+* text=auto
+experiments/** -text
+case/historical/** -text
+*.csv -text
+*.pdf binary
+*.png binary
+*.jpg binary

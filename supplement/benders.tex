@@ -1,0 +1,20 @@
+\section{Solution by Logic-Based Benders Decomposition}\label{BDSF}\label{subsec:logic-benders}
+
+At fixed context \(x\), enumerate \(T\) candidates \(a^1,\ldots,a^T\) for the uncertainty-affecting decision. Write \(b\) for the remaining decision. The master problem selects a candidate \(a^t\) through the binary selectors \(u_t\) in Constraint~\textup{(20a)}. Constraint~\textup{(20b)} then fixes its cluster, and Equation~\textup{(4)} gives its normalized weights. For each selected \(a^t\), the subproblem minimizes the empirical loss \(\widehat L_{N,x}((a^t,b))\) in Equation~\textup{(5)} over \(b\in\mathcal B\) subject to the chance constraints in Model~\textup{(15)}. When Proposition~1 applies, the subproblem imposes Constraint~\textup{(22)} for the corresponding requirement. The subproblem is convex if the feasible sets for all requirements and the empirical loss are convex in \(b\).
+
+Let \(\mathcal T\subseteq\{1,\ldots,T\}\) index the candidates with nonempty clusters and set \(u_t=0\) for \(t\notin\mathcal T\). For each \(t\in\mathcal T\), let \(\underline Q_t\) be a finite valid lower bound on its subproblem value, for example a bound obtained by dropping the chance constraints. Let \(Q_t\) be the exact optimal value for a feasible candidate. The master minimizes \(e\) subject to Constraint~\textup{(20a)} and
+\begin{equation}\label{eq:master-lower-bound}
+ e\ge\sum_{s\in\mathcal T}\underline Q_su_s.
+\end{equation}
+When the selected subproblem is feasible, add the logic-based Benders optimality cut \citep{hooker2003logic}
+\begin{equation}\label{eq:logic-cut}
+ e\ge\sum_{s\in\mathcal T}\underline Q_su_s+(Q_t-\underline Q_t)u_t.
+\end{equation}
+The cut uses the combinatorial logic of the candidate selection. It gives \(Q_t\) when \(u_t=1\) and the initial lower bound of the selected candidate otherwise. If the subproblem is certified infeasible, add the feasibility cut \(u_t=0\).
+
+The master optimum gives a lower bound \(LB\) on the optimal empirical loss over the retained candidates. The best feasible subproblem solution found so far gives an upper bound \(UB\), initialized to \(+\infty\). Before solving the selected subproblem, stop if \(UB\) is finite and \(UB-LB\le\epsilon_{\rm opt}\max\{1,|UB|\}\), where \(\epsilon_{\rm opt}\ge0\) is the relative gap tolerance. Return the best feasible decision with objective gap at most \(UB-LB\). If the candidate set includes every \(a\) with available estimates in Model~\textup{(15)}, this gap can serve as \(\eta_N\) in Theorem~2. If the master is infeasible, the model is infeasible over the retained candidates.
+
+Suppose each master is solved globally and each subproblem returns an attained, finite global optimum or a certificate of infeasibility. An infeasible candidate is excluded after its first evaluation. If the master selects a previously evaluated feasible candidate, its exact value gives \(LB=Q_t\), while \(UB\le Q_t\). Because \(LB\le UB\), the gap is zero and the procedure stops before solving that subproblem again. Thus the procedure solves at most \(T\) subproblems. A zero tolerance yields an exact optimum or an infeasibility certificate over the retained candidates.
+
+
+The files in \path{experiments/runtime/code/} implement the historical newsvendor timing strategies. The candidate-specific cuts above give the general finite-candidate formulation. The pricing stress test evaluates candidate prices using the newsvendor structure and compares the feasible decisions.

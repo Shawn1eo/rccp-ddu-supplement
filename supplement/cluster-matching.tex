@@ -1,0 +1,31 @@
+\section{Cluster Matching}
+
+At observed context \(x\), write \(a\) for the decision that affects uncertainty and \(r=(a,x)\) for the query. Let \(d_i(r)\) be its Euclidean distance to the scaled decision--context pair of historical observation \(i\), and let \(\mathcal K_i\) indicate membership in the selected cluster. The cluster has \(m=\sum_{i=1}^N\mathcal K_i\) observations. This section formulates membership for \(k\)-nearest neighbors (kNN) and local sample average (LSA) in paper Model~\textup{(19)}. It then describes how to precompute LSA clusters for a finite set of candidate decisions.
+
+\subsection{Illustrative Matching Constraints}
+
+For kNN, consider a neighbor count \(k<N\) and admissible pairs \(r=(a,x)\) where \(d_{(k)}(r)<d_{(k+1)}(r)\). Then the cluster has size \(m=k\). With \(m=k\) and a sufficiently large finite \(M_{\rm rank}\), replace Constraint~\textup{(19c)} by
+\begin{equation}\label{eq-ranking}
+ d_i(r)^2-d_s(r)^2
+ \le M_{\rm rank}(1+\mathcal K_s-\mathcal K_i),
+ \qquad i,s=1,\ldots,N,\quad i\ne s
+\end{equation}
+These inequalities ensure that each selected observation is no farther than any unselected observation. At fixed \(x\), the quadratic terms in \(a\) cancel in each distance difference. If a tie spans the cutoff, fixing \(m=k\) in Constraints~\eqref{eq-ranking} permits a selection of exactly \(k\) observations from among the nearest. The closed-ball rule used by the paper's uniform-deviation proof keeps all observations at distance at most \(d_{(k)}(r)\) and uses their actual count in the denominator. With a tie across the cutoff this count can exceed \(k\). For \(k=N\), all observations are selected.
+
+For LSA, the rule in Equation~\textup{(7b)} includes every observation with \(d_i(r)\le h\). Consider a domain with a separation \(\delta>0\) such that \(d_i(r)^2-h^2\ge\delta\) whenever \(d_i(r)>h\). On that domain, replace Constraint~\textup{(19c)} by the big-\(M\) constraints
+\begin{equation}\label{eq-LSACluster}
+\begin{aligned}
+ d_i(r)^2-h^2&\le M_{\rm LSA}(1-\mathcal K_i),\\
+ h^2-d_i(r)^2+\delta&\le M_{\rm LSA}\mathcal K_i,\qquad i=1,\ldots,N
+\end{aligned}
+\end{equation}
+With an appropriate finite \(M_{\rm LSA}\), these inequalities implement membership. The separation can be checked over a finite set of candidate pairs. If distances can approach \(h\) arbitrarily closely from above, a fixed positive separation can exclude legitimate decisions. In that case Equation~\textup{(7b)} still defines the exact cluster rule.
+
+\subsection{LSA Matching Procedure}\label{app::LSA}
+
+The LSA matching procedure precomputes the cluster for each candidate decision \(a^t\) at context \(x\). Construct a balanced \(k\)-d tree on the scaled historical decision--context pairs \(R_i=(A_i,X_i)\) \citep{friedman1977algorithm}. The tree partitions the pairs along coordinate axes. Each historical outcome \(Y_i\) is retrieved by the index of its pair after matching.
+
+For each candidate \((a^t,x)\), search the tree for all pairs within distance \(h\), including those on the boundary. The search skips any tree region whose minimum distance to \((a^t,x)\) exceeds \(h\). Store the indices and their count to compute the weights from Equation~\textup{(7b)}. One tree serves all candidates. Pruning can avoid repeated scans, especially in low-dimensional decision--context spaces. The search cost depends on the geometry of the pairs and includes the cost of reporting every match.
+
+
+In the CDF diagnostic (\path{theory_validation.py}), kNN retrieves a closed ball at the computed \(k\)-th distance, including cutoff ties. The pricing stress-test implementation calls a nearest-neighbor routine for exactly \(k\) records. The rules agree whenever the \(k\)-th and \((k+1)\)-st distances differ. The synthetic test contexts are continuously distributed.

@@ -1,0 +1,19 @@
+{
+  "design": "Paired sensitivity analysis of a fixed five-percentage-point safety margin",
+  "fixed_before_new_evaluations": true,
+  "test_coverage_reference": 0.85,
+  "population_target_attainment_requirement": 0.90,
+  "nominal_fit_violation_tolerance": 0.10,
+  "margin_fit_violation_tolerance": 0.05,
+  "constrained_oracle_violation_tolerance_for_both_arms": 0.10,
+  "replications_per_price_dependence_level": 20,
+  "replication_ids_inclusive": [70, 89],
+  "price_dependence_levels": [0, 0.25, 0.50, 0.75, 1],
+  "unit_for_uncertainty": "independent replication; each replication contains 80 test contexts",
+  "primary_metric": "returned action with population conditional target-attainment probability >= 0.90, divided by all attempted test contexts",
+  "profit_metric": "total true expected profit on truly feasible returns divided by constrained oracle total true expected profit on the same contexts",
+  "paired_cost_metric": "profit difference between fitted risk levels on identical fresh contexts on which both decisions meet the true 0.90 requirement",
+  "competing_methods": ["CCW", "CQ-CCP", "P-CCP", "SAA-CCP"],
+  "all_methods_share_guard": true,
+  "selection_of_reported_levels_or_seeds": "none"
+}
