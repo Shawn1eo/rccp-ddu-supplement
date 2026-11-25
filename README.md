@@ -2,7 +2,17 @@
 
 **[Read the Online Appendix (PDF, 9 pages)](Online-Appendix.pdf)**
 
-The paper’s “Online Appendix” is the PDF titled *Computational Supplement*. The two sections on the experimental setup are on the first two pages.
+The paper’s “Online Appendix” is the PDF titled *Computational Supplement*.
+
+| Section | PDF pages | What you’ll find | LaTeX source |
+|---|---|---|---|
+| **S1 · Experimental Design and Reproducibility** | 1–5 | How the synthetic experiments vary price dependence and demand shocks, and how they measure estimation error, decision feasibility, expected loss, and runtime. | [S1 source](supplement/experiments.tex) |
+| **S2 · JD.com Evaluation Conventions** | 5–6 | How the study screens sales data, estimates demand, and sets costs and candidate prices. It also explains how to interpret the reported feasibility rates and profit ratios. | [S2 source](supplement/case-study.tex) |
+| **S3 · Cluster Matching** | 6–7 | How k-nearest neighbors and local sample average select historical observations for a decision and context, and how a k-d tree precomputes the local sample average matches. | [S3 source](supplement/cluster-matching.tex) |
+| **S4 · Solution by Logic-Based Benders Decomposition** | 7–8 | How the master problem selects a candidate decision, how the subproblem evaluates it, and how feasibility cuts, optimality cuts, and the optimality gap govern the search. | [S4 source](supplement/benders.tex) |
+| **S5 · Verification of Sufficient Conditions** | 8–9 | Examples showing when the paper’s covering condition (Assumption 4) and Lipschitz smoothness condition (Assumption 2) hold. | [S5 source](supplement/sufficient-conditions.tex) |
+
+**Quick links to the experimental setup in S1**
 
 | Section | Where to look in the PDF | LaTeX source |
 |---|---|---|
